@@ -1,0 +1,1170 @@
+/* Global Styles */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* margin: 0;
+    padding: 0;
+    overflow-x: hidden; */
+    /* box-sizing: border-box; */
+}
+
+/* Existing Styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}
+
+.signup-button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .auth-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .auth-links a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .signup-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 30px;
+    }
+
+    .signup-button {
+        padding: 8px 16px;
+    }
+}
+
+/* rotattin=videos */
+
+/* Existing Styles */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Text Section */
+.intro {
+    margin: 10px;
+}
+
+.intro h1 {
+    font-size: 60px;
+    text-align: left;
+}
+
+.intro p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+    color: gray;
+}
+
+.intro h1, p {
+    margin: 25px;
+}
+
+.cta-button {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 200px;
+    position: relative;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    .intro {
+        margin: 0;
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .intro p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .intro h1, p {
+        margin: 15px;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+
+/* video-section */
+
+/* Full-width container */
+
+/* Existing Styles */
+.video-section {
+    position: relative; /* Keep it fixed in place */
+    width: 100%; /* Full width of the viewport */
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0); 
+    margin-top: 10%; 
+}
+
+/* Container styling */
+.video-container {
+    width: 100%; /* Slightly smaller than the full width */
+    overflow: hidden; 
+}
+
+.video-container video{
+    width: 100%;
+    min-height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .video-section {
+        height: 60vh; /* Adjust height for smaller screens */
+        margin-top: 5%; /* Reduce margin-top to fit better */
+    }
+
+    .video-container {
+        width: 95%; /* Increase width for better fit on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-section {
+        height: 50vh; /* Further reduce height for very small screens */
+        margin-top: 2%; /* Minimize margin-top */
+    }
+
+    .video-container {
+        width: 100%; /* Full width for the container on very small screens */
+    }
+}
+
+
+/* General styling for the carousel section */
+/* Existing Styles */
+.carousel-section {
+    background-color: white;
+    color: rgb(92, 77, 77);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* Styling for the static text above the carousel */
+.carousel-text {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Container that holds the moving brand names */
+.carousel-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+/* The track that holds all brand names and moves */
+.carousel-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollLeft 50s linear infinite; /* Controls the scrolling speed */
+}
+
+/* Individual brand styling */
+.brand {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel-text {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .brand {
+        padding: 0 10px; /* Reduce padding to fit more items */
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+
+    .carousel-track {
+        animation: scrollLeft 40s linear infinite; /* Faster scrolling on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-text {
+        font-size: 0.9rem; /* Further reduce font size for very small screens */
+    }
+
+    .brand {
+        padding: 0 5px; /* Further reduce padding */
+        font-size: 0.8rem; /* Further reduce font size */
+    }
+
+    .carousel-track {
+        animation: scrollLeft 30s linear infinite; /* Faster scrolling on very small screens */
+    }
+}
+
+/* another container */
+/* Existing Styles */
+.full-width-container {
+    width: 100%;
+    height: 70vw;
+    background-color: black;
+    padding: 50px 20px; /* Adjust the padding to create the spacing you want */
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
+    text-align: center;
+    margin-top: 5%;
+}
+
+.full-width-container h1 {
+    color: white;
+    font-size: 80px; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Space between h1 and the subtext */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.full-width-container .subtext {
+    color: gray;
+    font-size: 25px; /* Smaller text below the h1 */
+    margin-top: 0;
+}
+
+/* Info Section Styling */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Left Area (Text) */
+.text-block {
+    width: 48%;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: grey;
+}
+
+.text-block p:hover {
+    background-color: #575656;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Right Area (Media) */
+.media-block-container {
+    width: 48%;
+    background-color: white;
+    height: 550px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center video in the container */
+}
+
+.media-block-container video {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .full-width-container {
+        height: auto; /* Adjust height for medium screens */
+        padding: 40px 15px; /* Adjust padding for medium screens */
+    }
+
+    .full-width-container h1 {
+        font-size: 60px; /* Reduce font size for medium screens */
+    }
+
+    .full-width-container .subtext {
+        font-size: 20px; /* Reduce font size for medium screens */
+    }
+
+    .text-block, .media-block-container {
+        width: 100%; /* Full width for both blocks */
+        text-align: center; /* Center text for better readability */
+    }
+
+    .text-block {
+        margin-bottom: 20px; /* Space between text and media */
+    }
+
+    .media-block-container video {
+        width: 80%; /* Reduce video width on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .full-width-container {
+        padding: 30px 10px; /* Adjust padding for small screens */
+    }
+
+    .full-width-container h1 {
+        font-size: 40px; /* Further reduce font size for small screens */
+    }
+
+    .full-width-container .subtext {
+        font-size: 18px; /* Further reduce font size for small screens */
+    }
+
+    .text-block, .media-block-container {
+        width: 100%; /* Full width for both blocks */
+        text-align: center; /* Center text for better readability */
+    }
+
+    .text-block {
+        font-size: 1em; /* Adjust font size for small screens */
+    }
+
+    .media-block-container {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+
+    .media-block-container video {
+        width: 90%; /* Adjust video width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .full-width-container {
+        padding: 20px 5px; /* Adjust padding for very small screens */
+    }
+
+    .full-width-container h1 {
+        font-size: 30px; /* Further reduce font size for very small screens */
+    }
+
+    .full-width-container .subtext {
+        font-size: 16px; /* Further reduce font size for very small screens */
+    }
+
+    .text-block {
+        font-size: 0.9em; /* Further adjust font size for very small screens */
+    }
+
+    .media-block-container {
+        height: 300px; /* Further reduce height for very small screens */
+    }
+}
+
+
+/* section-next */
+.container-text {
+    text-align: left;
+}
+
+.text-box h1{
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+    color: black;
+}
+
+.text-box h1,p{
+    margin: 25px;
+}
+
+/*  superpower section*/
+
+ /* Existing Styles */
+.superpowers-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-heading {
+    font-size: 65px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.sub-heading {
+    font-size: 25px;
+    text-align: left;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .superpowers-container {
+        padding: 30px 15px; /* Adjust padding for medium screens */
+    }
+
+    .main-heading {
+        font-size: 50px; /* Reduce font size for medium screens */
+    }
+
+    .sub-heading {
+        font-size: 20px; /* Reduce font size for medium screens */
+        margin-bottom: 30px; /* Adjust margin for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .superpowers-container {
+        padding: 20px 10px; /* Adjust padding for small screens */
+    }
+
+    .main-heading {
+        font-size: 40px; /* Further reduce font size for small screens */
+    }
+
+    .sub-heading {
+        font-size: 18px; /* Further reduce font size for small screens */
+        margin-bottom: 20px; /* Adjust margin for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .superpowers-container {
+        padding: 15px 5px; /* Adjust padding for very small screens */
+    }
+
+    .main-heading {
+        font-size: 30px; /* Further reduce font size for very small screens */
+        text-align: center; /* Center text for very small screens */
+    }
+
+    .sub-heading {
+        font-size: 16px; /* Further reduce font size for very small screens */
+        margin-bottom: 15px; /* Adjust margin for very small screens */
+        text-align: center; /* Center text for very small screens */
+    }
+}
+
+
+
+/* next double video part */
+.section-clips, .section-sound-filler-words {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Allows the items to wrap to the next line on smaller screens */
+}
+
+/* Ensure the boxes maintain their intended sizes */
+.box-clips, .box-translation, .box-eye-contact, 
+.box-studio-sound, .box-remove-filler-words {
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px; /* Adjusts the minimum width while allowing flexibility */
+    margin: 0 10px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Video and Image styling */
+.video-clips {
+    width: 50%; /* Ensures video fits within the box */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+}
+
+.video-eye-contact {
+    width: 100%; /* Ensures video fits within the box */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.image-translation, .image-studio-sound {
+    width: 100%; /* Ensures image fits within the box */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-clips, .section-sound-filler-words {
+        flex-direction: column; /* Stacks boxes vertically on smaller screens */
+        align-items: center; /* Center-aligns the boxes */
+    }
+
+    .box-clips, .box-translation, .box-eye-contact, 
+    .box-studio-sound, .box-remove-filler-words {
+        flex: 1 1 100%; /* Makes each box full-width on smaller screens */
+        margin: 10px 0; /* Adjusts margins for better spacing on smaller screens */
+    }
+}
+
+
+
+/* last vid section */
+.section-clips, .section-sound-filler-words {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Allows wrapping to the next line on smaller screens */
+}
+
+/* Box styling */
+.box-clips, .box-translation, .box-eye-contact, 
+.box-studio-sound, .box-remove-filler-words {
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px; /* Allows flexibility with a minimum width */
+    margin: 0 10px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Image styling */
+.last-img-clip, .image-last, .img-last-2 {
+    width: 100%; /* Ensures image fits within the box */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 20px;
+}
+
+/* Specific adjustments for image styles */
+.image-last {
+    border-radius: 10px; /* Adjust border radius if needed */
+}
+
+.img-last-2 {
+    border-radius: 10px; /* Adjust border radius if needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-clips, .section-sound-filler-words {
+        flex-direction: column; /* Stacks boxes vertically on smaller screens */
+        align-items: center; /* Center-aligns the boxes */
+    }
+
+    .box-clips, .box-translation, .box-eye-contact, 
+    .box-studio-sound, .box-remove-filler-words {
+        flex: 1 1 100%; /* Makes each box full-width on smaller screens */
+        margin: 10px 0; /* Adjusts margins for better spacing on smaller screens */
+    }
+}
+
+
+/* black container */
+.black-container {
+    width: 100%;
+    /* height: 70vw; */
+    background-color: black;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+}
+
+.black-info {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.black-info h1 {
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+.black-info p {
+    font-size: 20px;
+    margin-top: 0.5rem;
+}
+
+.black-clips {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping to the next line on smaller screens */
+    margin-top: 100px;
+}
+
+/* Box styling */
+.box-clips, .box-translation, .box-eye-contact {
+    background-color: rgba(225, 225, 225, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, and basis for responsive boxes */
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.box-clips p, .box-translation p, .box-eye-contact p {
+    text-align: left;
+}
+
+/* Image styling */
+.last-img-clip, .image-last, .img-last-2 {
+    width: 100%; /* Ensures image fits within the box */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adjust if needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .black-clips {
+        flex-direction: column; /* Stacks boxes vertically on smaller screens */
+        align-items: center; /* Center-aligns the boxes */
+    }
+
+    .box-clips, .box-translation, .box-eye-contact {
+        flex: 1 1 100%; /* Makes each box full-width on smaller screens */
+        margin: 10px 0; /* Adjusts margins for better spacing on smaller screens */
+    }
+
+    .black-info h1 {
+        font-size: 50px; /* Smaller font size on smaller screens */
+    }
+
+    .black-info p {
+        font-size: 18px; /* Smaller font size on smaller screens */
+    }
+}
+
+
+/* open view part */
+.open-view-container {
+    width: 100%;
+    height: 70vw;
+    padding: 50px 20px; /* Adjust the padding to create the spacing you want */
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+}
+
+.open-info h1 {
+    color: black;
+    font-size: 85px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    margin: 0; /* Removes default margin */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .open-info h1 {
+        font-size: 50px; /* Smaller font size on smaller screens */
+    }
+
+    .open-view-container {
+        height: auto; /* Adjusts height to fit content on smaller screens */
+        padding: 30px 10px; /* Reduces padding for smaller screens */
+    }
+}
+
+.open-img img {
+    width: 100%; /* Ensures image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners to the image */
+}
+
+
+/* another container */
+.nd-black-container {
+    width: 100%;
+    height: 75%;
+    background-color: black;
+    background-image: url('new image.png'); /* Ensure the image path is correct */
+    background-size: cover; /* Adjusted to ensure the image covers the container */
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15% ;
+}
+
+.nd-black-info {
+    max-width: 100%;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 35%;
+    margin-right: 20%;
+}
+
+.heading {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.description {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    /* line-height: 1.5; */
+    color: #ddd;
+}
+
+.btn-learn-more {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: .5%;
+}
+
+.btn-learn-more:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 40px; /* Adjusted for smaller screens */
+    }
+
+    .description {
+        font-size: 16px; /* Adjusted for smaller screens */
+    }
+
+    .btn-learn-more {
+        padding: 10px 20px; /* Adjusted for smaller screens */
+    }
+}
+
+
+/* pricing */
+/* General styles for the pricing container and cards */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3%;
+    gap: 20px;
+    max-width: 100%;
+    height: auto;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+}
+
+.pricing-card {
+    background-color: #ece8e8;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 320px        ;
+    text-align: center;
+    border: 1px solid rgb(165, 162, 162);
+    height: 625px;
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+
+.plan-title {
+    font-size: 65px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.price {
+    font-size: 36px;
+    color: #000;
+    margin: 0;
+    text-align: left;
+}
+
+.credit {
+    font-size: 15px;
+    color: #999;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.description {
+    font-size: 20px;
+    color: #333131;
+    margin-top: 50px;
+}
+
+.get-started {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    box-shadow: 10px 10px 10px rgba(65, 59, 59, 0.2);
+}
+
+.get-started:hover {
+    background-color: #000000;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+    font-size: 15px;
+    color: #2b2929;
+    text-align: left;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+.price-titles {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 90%;
+        max-width: 500px; /* Restrict max width to ensure cards don't get too wide */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .plan-title {
+        font-size: 50px; /* Adjust font size for smaller screens */
+    }
+
+    .price {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+
+    .description {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .get-started {
+        width: 100%; /* Make button full width on smaller screens */
+    }
+
+    .price-titles {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .plan-title {
+        font-size: 40px; /* Further adjust font size for very small screens */
+    }
+
+    .price {
+        font-size: 24px; /* Further adjust font size for very small screens */
+    }
+
+    .description {
+        font-size: 16px; /* Further adjust font size for very small screens */
+    }
+
+    .get-started {
+        padding: 15px;
+        font-size: 18px; /* Adjust font size for the button */
+    }
+
+    .price-titles {
+        font-size: 24px; /* Further adjust font size for very small screens */
+    }
+}
+
+
+/* footer section */
+
+
+/* General footer styles */
+footer {
+    background-color: #2c2c2e;
+    color: #ccc;
+    padding: 40px 20px;
+    text-align: left;
+    margin-top: 50px;
+    border-radius: 15px;
+    height: auto; /* Allow height to adjust based on content */
+}
+
+/* Container for the main footer content */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Footer logo styles */
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    margin: 5px 0;
+}
+
+/* Footer links styles */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.footer-column {
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ff857b;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #ff857b;
+}
+
+/* Extra footer content styles */
+.footer-extra {
+    display: flex;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px; /* Increased gap for spacing */
+    background-color: rgba(225, 225, 225, 0.1);
+    border-radius: 20px;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 20px; /* Add margin top to separate from main footer content */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .footer-column {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-logo h2 {
+        font-size: 20px; /* Adjust logo size for smaller screens */
+    }
+
+    .footer-column h3 {
+        font-size: 16px; /* Adjust section header size */
+    }
+
+    .footer-column ul li {
+        margin-bottom: 6px; /* Adjust list item spacing */
+    }
+
+    .footer-extra {
+        flex-direction: column;
+        gap: 20px; /* Adjust gap for vertical layout */
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo h2 {
+        font-size: 18px; /* Further adjust logo size for very small screens */
+    }
+
+    .footer-column h3 {
+        font-size: 14px; /* Further adjust section header size */
+    }
+
+    .footer-column ul li {
+        margin-bottom: 4px; /* Further adjust list item spacing */
+    }
+
+    .footer-extra {
+        font-size: 14px; /* Adjust font size for extra footer content */
+    }
+}
